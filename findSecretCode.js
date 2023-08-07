@@ -1,10 +1,10 @@
 const cluster = require('cluster');
 const totalCPUs = require('os').cpus().length;
 
-const secretCodeToFind = 21305;
+const secretCodeToFind = 213405;
 
-const minNumber = 10000;
-const maxNumber = 99999;
+const minNumber = 100000;
+const maxNumber = 999999;
 const totalNumbersToEachWorkerToTest = Math.floor((maxNumber - minNumber) / totalCPUs)
 
 const indexes = [0, 1, 2, 3, 4, 5, 6, 7]
